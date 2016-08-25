@@ -38,3 +38,30 @@ x = Themultipier()
 print x 
 
 print x.do_it(b.number)
+
+
+
+
+# Sing me a song
+class Song(object):
+    
+    def __init__(self, lyrics):
+         self.lyrics = lyrics
+    
+    def sing_me_a_song(self):
+        for line in self.lyrics:
+            print line 
+
+lyrics = ["Happy birthday to you",
+                  "I don't wat to get sued"
+                  "So I'kk stop right here."]
+
+a_sing = Song(lyrics)
+b_sing = Song(["They rally around the family",
+                        "With pockets full of shells"])   
+                        
+a_sing.sing_me_a_song()
+b_sing.sing_me_a_song()                        
+                                       
+stuff = ['Test', 'This', 'Out']
+print ' '.join(stuff)
